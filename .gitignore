@@ -1,0 +1,7 @@
+# Visual Studio build
+.vs/
+x64/
+*.tlog
+*.log
+*.sdf
+*.ipch
