@@ -5,3 +5,12 @@ x64/
 *.log
 *.sdf
 *.ipch
+output/
+include/
+*.ipdb
+*.iobj
+*.user
+*.recipe
+/bin.*
+*.vcxproj.FileListAbsolute.txt
+*.vcxprojAssemblyReference.cache
