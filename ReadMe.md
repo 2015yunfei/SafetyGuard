@@ -1,13 +1,3 @@
-原项目地址：
-
-https://github.com/AgentGuo/PFSafetyGuard
-
-
-
-本人成功复现了该项目，简单修改了部分代码，添加了部分注释和说明后重新上传。同时根据自己的调试过程完善了部分文档。
-
-
-
 # 运行环境
 
 
@@ -206,9 +196,13 @@ https://blog.csdn.net/yao_hou/article/details/108015209
 
 
 
+原项目地址：
+
+https://github.com/AgentGuo/PFSafetyGuard
 
 
 
+本人成功复现了该项目，简单修改了部分代码，添加了部分注释和说明后重新上传。同时根据自己的调试过程完善了部分文档。
 
 
 
@@ -354,3 +348,79 @@ step8:编译生成打包安装程序
 
 
 # 本项目打包过程
+
+
+
+基于上述打包教程，本项目打包过程如下所示：
+
+![Snipaste_2024-04-18_17-46-48](ReadMe/Snipaste_2024-04-18_17-46-48.png)
+
+![Snipaste_2024-04-18_17-47-09](ReadMe/Snipaste_2024-04-18_17-47-09.png)
+
+![Snipaste_2024-04-18_17-47-22](ReadMe/Snipaste_2024-04-18_17-47-22.png)
+
+创建完项目之后，加入文件。
+
+![image-20240418190119770](ReadMe/image-20240418190119770.png)
+
+将PFSafetyGuard目录下的文件加入到SetupQYF：
+
+![Snipaste_2024-04-18_17-48-20](ReadMe/Snipaste_2024-04-18_17-48-20.png)
+
+![Snipaste_2024-04-18_17-48-39](ReadMe/Snipaste_2024-04-18_17-48-39.png)
+
+同时需要将该项目依赖的Qt库一并加入到SetupQYF：
+
+![Snipaste_2024-04-18_17-52-35](ReadMe/Snipaste_2024-04-18_17-52-35-1713438167536-9.png)
+
+将该目录下的：
+
+- Qt5Cored.dll
+- Qt5Guid.dll
+- Qt5Widgetsd.dll
+
+加入到SetupQYF：
+
+![image-20240418190324034](ReadMe/image-20240418190324034.png)
+
+增加输出程序：
+
+![Snipaste_2024-04-18_17-54-06](ReadMe/Snipaste_2024-04-18_17-54-06-1713438223489-12.png)
+
+![Snipaste_2024-04-18_17-54-19](ReadMe/Snipaste_2024-04-18_17-54-19.png)
+
+创建快捷方式：
+
+![Snipaste_2024-04-18_17-54-38](ReadMe/Snipaste_2024-04-18_17-54-38.png)
+
+![Snipaste_2024-04-18_17-54-50](ReadMe/Snipaste_2024-04-18_17-54-50.png)
+
+将该快捷方式移动到：User's Desktop
+
+![Snipaste_2024-04-18_17-55-03](ReadMe/Snipaste_2024-04-18_17-55-03.png)
+
+
+
+然后开始生成：
+
+![Snipaste_2024-04-18_17-53-42](ReadMe/Snipaste_2024-04-18_17-53-42-1713438305321-19.png)
+
+会在当前目录下的Debug生成两个安装文件。
+
+![Snipaste_2024-04-18_17-56-40](ReadMe/Snipaste_2024-04-18_17-56-40.png)
+
+
+
+对于生成的msi文件的进行测试：
+
+![Snipaste_2024-04-18_17-59-23](ReadMe/Snipaste_2024-04-18_17-59-23.png)
+
+![Snipaste_2024-04-18_17-59-56](ReadMe/Snipaste_2024-04-18_17-59-56.png)
+
+![Snipaste_2024-04-18_18-00-05](ReadMe/Snipaste_2024-04-18_18-00-05.png)
+
+![Snipaste_2024-04-18_18-00-52](ReadMe/Snipaste_2024-04-18_18-00-52.png)
+
+如图所示：
+
+程序成功运行，说明打包成功！
